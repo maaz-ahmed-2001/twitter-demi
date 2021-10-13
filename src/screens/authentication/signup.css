@@ -1,0 +1,529 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+    font-family:"Open Sans",serif ;
+}
+body{
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#root{
+    width: 100%;
+    display: flex;
+    /* justify-content:; */
+    align-items: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid #cfcfcf;
+
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+}
+.ul-li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.75em;
+}
+#nav-dp{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+
+
+}
+.sidebar{
+    transition: 0.5s ease-out;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+    width: 30%;
+    height: 100vh;
+    position: absolute;
+    left: -30%;
+    top: 0%;
+    background-color: #fff;
+    border-right: 2px solid #cfcfcf;
+
+
+}
+
+.sidebar-rev{
+    transition: 0.5s ease-out;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    width: 30%;
+    height: 100vh;
+    position: absolute;
+    left:0%;
+    top: 0%;
+    background-color: #fff;
+    border-right: 2px solid #cfcfcf;
+
+
+}
+#img-div{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    border-bottom: 2px solid #cfcfcf;
+    box-shadow: 2px 2px 4px solid #cfcfcf;
+    
+}
+#img-div img{
+    margin-top: 4em;
+    margin-bottom: 1em;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #1da1f3;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#info h2 {
+    margin-bottom: 0.5em;
+    letter-spacing: 0.02em;
+
+}
+#info h5{
+    margin-bottom: 1em;
+    color: #777777;
+    letter-spacing: 0.03em;
+}
+#follow{
+    width:100%;
+    margin-bottom: 1em;
+}
+#follow, #follow span{
+    font-weight: 900;
+}
+#follow span{
+    margin: 5px;
+}
+
+#collapse{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.sidebar-li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 11vh;
+    width: 100%;
+    /* margin-top: em; */
+    /* margin-bottom: 1.5em; */
+
+
+}
+.sidebar-li img{
+    color: inherit;
+}
+.sidebar-li span{
+    width: 100px;
+    margin-left: -15%;
+    font-size: 18px;
+    font-weight: 700;
+    color: inherit;
+    letter-spacing: 0.05em;
+}
+.sidebar-li:hover{
+    color: #fff;
+    background-color: #1da1f3;
+    border-right: 2px solid #1da1f3;
+
+}
+
+#main-div{
+    width: 100%;
+    
+}
+#footer{
+    border-top: 2px solid #cfcfcf;
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+}
+#footer p {
+
+    font-size: 12px;
+    text-align: center;
+
+}
+
+
+
+
+#signup{
+    width: 300px;
+    height: fit-content;
+    text-align: center;
+    display: inline-flexbox;
+    padding: 5px;
+}
+
+#form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+}
+
+#T-logo{
+    height: 100vh;
+    width: 100%;
+}
+#twitter{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.signup-inp{
+    border-radius: 8px;
+    border: 1px solid rgb(197, 197, 197);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 250px;
+    height: 40px;
+    padding-left:5px ;
+    font-size: 16px;
+}
+
+.signup-inp:focus{
+    outline: none;
+    border: 2px solid #1da1f3;
+}
+#twitter-h{
+    color: #1da1f3;
+}
+
+#signup h1{
+    margin-bottom: 0.4em;
+}
+#signup h2{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.account{
+    color: #1da1f3;
+}
+
+.account:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#sign-btn{
+    color: #fff;
+    background-color: #1da1f3;
+    width: 90%;
+    height: 1.7em;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 2em;
+    border: 1px solid #1da1f3;
+    font-size: 18px;
+    font-weight: 900;
+
+}
+#sign-btn:hover{
+    background-color: #fff;
+    color: #1da1f3;
+}
+.acc-text{
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 800px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        user-select: none;
+        font-family:"Open Sans",serif ;
+    }
+    body{
+        width: 100%;
+        min-height:100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #root{
+        width: 100%;
+        display: flex;
+        /* justify-content:; */
+        align-items: center;
+        flex-direction: column;
+    }
+    #signup{
+        width: 300px;
+        height: fit-content;
+        text-align: center;
+        display: inline-flexbox;
+        padding: 5px;
+    }
+    
+    #form-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+        order: 1;
+    }
+    
+    #T-logo{
+        height: 100%;
+        width: 100%;
+    }
+    #twitter{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        order: 2;
+    }
+    
+    .signup-inp{
+        border-radius: 8px;
+        border: 1px solid rgb(197, 197, 197);
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 250px;
+        height: 40px;
+        padding-left:5px ;
+        font-size: 16px;
+    }
+    
+    .signup-inp:focus{
+        outline: none;
+        border: 2px solid #1da1f3;
+    }
+    #twitter-h{
+        color: #1da1f3;
+    }
+    
+    #signup h1{
+        margin-top: 2em;
+        margin-bottom: 0.4em;
+    }
+    #signup h2{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .account{
+        color: #1da1f3;
+    }
+    
+    .account:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    #sign-btn{
+        color: #fff;
+        background-color: #1da1f3;
+        width: 90%;
+        height: 1.7em;
+        border-radius: 20px;
+        outline: none;
+        margin-top: 2em;
+        border: 1px solid #1da1f3;
+        font-size: 18px;
+        font-weight: 900;
+        margin-bottom: 3em;
+    
+    }
+    #sign-btn:hover{
+        background-color: #fff;
+        color: #1da1f3;
+    }
+    .acc-text{
+        margin-top: 1em;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-bottom: 2px solid #cfcfcf;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+    }
+    #nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        flex-direction: row;
+        /* padding: em; */
+    }
+    .ul-li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        width: fit-content;
+    }
+    .sidebar{
+        transition: 0.5s ease-out;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        z-index: -1;
+        width: 70%;
+        height: 100vh;
+        position: absolute;
+        left: -70%;
+        top: 0%;
+        background-color: #fff;
+        border-right: 2px solid #cfcfcf;
+        overflow: hidden;
+        
+    }
+    
+    .sidebar-rev{
+        transition: 0.5s ease-out;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        z-index: 10;
+        width: 70%;
+        height: 100vh;
+        position: absolute;
+        left:0%;
+        top: 0%;
+        background-color: #fff;
+        border-right: 2px solid #cfcfcf;
+        overflow: hidden;
+
+    }
+    #img-div{
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        border-bottom: 2px solid #cfcfcf;
+        box-shadow: 2px 2px 4px solid #cfcfcf;
+        
+    }
+    #img-div img{
+        margin-top: 4em;
+        margin-bottom: 1em;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid #1da1f3;
+    }
+    #info h2 {
+        margin-bottom: 0.5em;
+    }
+    #info h5{
+        margin-bottom: 2em;
+        color: #777777;
+
+    }
+    #nav-dp{
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+
+    }
+    
+    #collapse{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .sidebar-li{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 8vh;
+        width: 100%;
+
+    
+    
+    }
+    .sidebar-li span{
+        width: 100px;
+        margin-left: -15%;
+    }
+    
+    #main-div{
+        width: 100%;
+        
+    }
+    #footer{
+        border-top: 2px solid #cfcfcf;
+        position: fixed;
+        bottom: 0;
+        width: inherit;
+    }
+    #footer p {
+    
+        font-size: 12px;
+        text-align: center;
+    
+    }
+    
+  }
+
+  
